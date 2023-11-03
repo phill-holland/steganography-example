@@ -32,7 +32,7 @@ Using this method reduces any chance of significantly changing the colour of any
 
 - dotnet core SDK 6 or above installed
 
-# Running (see requirements below)
+# Running
 
 at the command prompt, type;
 
