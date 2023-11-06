@@ -51,7 +51,7 @@ Code extract;
     pixel.A = (byte)(pixel.A | (value >> 6 & (0x3)));
 ```
 
-Using this method reduces any chance of significantly changing the colour of any given pixel, the change should not be generally be perceivable by the naked eye.
+Using this method reduces any chance of significantly changing the colour of any given pixel, the change should not be perceivable by the naked eye.
 
 # Requirements
 
