@@ -22,24 +22,24 @@ The message is then converted to ASCII values, and each ASCII byte value, is spr
 For example;
 
 ```
-ASCII letter a = '97' (decimal)
+    ASCII letter a = '97' (decimal)
 
-ASCII letter a = 0110 0001 (binary)
+    ASCII letter a = 0110 0001 (binary)
 
-AA  BB  GG  RR
-01  10  00  01   
+    AA  BB  GG  RR
+    01  10  00  01   
 
-red = 01
-green = 00
-blue = 10
-alpha = 01
+    red = 01
+    green = 00
+    blue = 10
+    alpha = 01
 
-(where XX represents the exist colour bit values already present in the source image)
+    new_red = XX XX XX 01
+    new_green = XX XX XX 00
+    new_blue = XX XX XX 10
+    new_alpha = XX XX XX 01
 
-new_red = XX XX XX 01
-new_green = XX XX XX 00
-new_blue = XX XX XX 10
-new_alpha = XX XX XX 01
+    (where XX represents the exist colour bit values already present in the source image)
 ```
 
 Code extract;
