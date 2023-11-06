@@ -40,6 +40,8 @@ new_blue = XX 10 XX XX
 new_alpha = 01 XX XX XX
 ```
 
+Code extract;
+
 ```
     pixel.R = (byte)(pixel.R | (value & (0x3)));
     pixel.G = (byte)(pixel.G | (value >> 2 & (0x3)));
