@@ -34,6 +34,8 @@ green = 00
 blue = 10
 alpha = 01
 
+(where XX represents the exist colour bit values already present in the source image)
+
 new_red = XX XX XX 01
 new_green = XX XX XX 00
 new_blue = XX XX XX 10
