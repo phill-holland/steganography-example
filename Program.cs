@@ -108,7 +108,7 @@ namespace Steganography
 
         static void Main(string[] args)
         {
-            Encode("cake.png", "hello world!");
+            Encode("images/cake.png", "hello world!");
             Console.WriteLine(Decode("output.png"));            
         }
     };
