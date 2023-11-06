@@ -35,9 +35,9 @@ blue = 10
 alpha = 01
 
 new_red = XX XX XX 01
-new_green = XX XX 00 XX
-new_blue = XX 10 XX XX
-new_alpha = 01 XX XX XX
+new_green = XX XX XX 00
+new_blue = XX XX XX 10
+new_alpha = XX XX XX 01
 ```
 
 Code extract;
