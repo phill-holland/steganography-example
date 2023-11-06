@@ -17,7 +17,23 @@ A 32 bit colour png image is loaded, and then within the output the first pixel 
 
 The size can be any 32 bit unsigned integer, which then using bit shifting, is split up and divided between the four colours of the pixel (red,green,blue and alpha)
 
-The message is then converted to ASCII values, and each 255 ASCII byte value, is spread across the lowest two bits, of each colour of the destination pixel.
+The message is then converted to ASCII values, and each ASCII byte value, is spread across the lowest two bits of each colour of the destination pixel.
+
+For example;
+
+```
+ASCII letter a = '97' (decimal)
+
+ASCII letter a = 0110 0001 (binary)
+
+AA  BB  GG  RR
+01  10  00  01   
+
+red = 01
+green = 00
+blue = 10
+alpha = 01
+```
 
 ```
     pixel.R = (byte)(pixel.R | (value & (0x3)));
@@ -26,7 +42,7 @@ The message is then converted to ASCII values, and each 255 ASCII byte value, is
     pixel.A = (byte)(pixel.A | (value >> 6 & (0x3)));
 ```
 
-Using this method reduces any chance of significantly changing the colour of any given pixel, the change should be generally be perceivable by the naked eye.
+Using this method reduces any chance of significantly changing the colour of any given pixel, the change should not be generally be perceivable by the naked eye.
 
 # Requirements
 
